@@ -18,6 +18,33 @@
   <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link href="./assets/css/argon-design-system.css?v=1.2.0" rel="stylesheet" />
+<style>
+
+  .carousel-img{
+    height:18rem;
+  }
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    margin-top: 8rem;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
 </head>
 
 <body class="index-page">
@@ -153,13 +180,13 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="img-fluid" src="./assets/img/theme/img-1-1200x1000.jpg" alt="First slide">
+                  <img class="img-fluid carousel-img"  src="./assets/img/photoshoot/couple.jpeg" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="img-fluid" src="./assets/img/theme/img-2-1200x1000.jpg" alt="Second slide">
+                  <img class="img-fluid carousel-img" src="./assets/img/photoshoot/couplePink.jpeg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="img-fluid" src="./assets/img/theme/img-1-1200x1000.jpg" alt="Third slide">
+                  <img class="img-fluid carousel-img" src="./assets/img/photoshoot/girl.jpeg" alt="Third slide">
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carousel_example" role="button" data-slide="prev">
@@ -200,14 +227,9 @@
           </div>
         </div>
       </div>
-      <div class="blur--hover pt-md-6">
-        <a href="./pages/demo.html" rel="nofollow">
-          <div class="icons-container blur-item mt-5 on-screen"
-            style="display: flex;justify-content: center;align-items: center;" data-toggle="on-screen">
-            <img src="./assets/img/2.jpeg" style="width:50rem" class="img-fluid" alt="">
-          </div>
-          <span class="blur-hidden h5 text-success">Have a look on our portfolio</span>
-        </a>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/dW4a2vNJ3NY" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -254,7 +276,7 @@
               </div> -->
               <div class="card-body px-lg-5 py-lg-5">
                 <div class="text-center text-muted mb-4">
-                  <small>Give a call</small>
+                  <h5>Give a call</h5>
                 </div>
                 <div style="display:flex; justify-content: space-around;">
 
